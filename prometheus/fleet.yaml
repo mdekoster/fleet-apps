@@ -6,6 +6,10 @@ helm:
   releaseName: monitoring
   version: 43.1.1
   values:
+    # We do not use the alert-manager on the local system
+    alertmanager:
+      enabled: false
+    # For docker-desktop the root fs mount should be disabled
     prometheus-node-exporter:
       hostRootFsMount:
         enabled: false
