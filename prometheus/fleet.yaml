@@ -5,3 +5,7 @@ helm:
   chart: kube-prometheus-stack
   releaseName: monitoring
   version: 43.1.1
+  values:
+    prometheus-node-exporter:
+      hostRootFsMount:
+        enabled: false
