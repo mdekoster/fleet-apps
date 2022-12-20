@@ -7,5 +7,6 @@ metadata:
 spec:
   # Everything from this repo will be ran in this cluster. You trust me right?
   repo: "https://github.com/mdekoster/fleet-apps"
+  branch: main
   paths:
   - prometheus
