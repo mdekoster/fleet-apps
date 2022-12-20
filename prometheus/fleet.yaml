@@ -1,0 +1,7 @@
+defaultNamespace: kube-prometheus-stack
+
+helm:
+  repo: https://prometheus-community.github.io/helm-charts
+  chart: prometheus-community/kube-prometheus-stack
+  releaseName: monitoring
+  version: 43.1.1
