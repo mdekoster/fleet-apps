@@ -16,13 +16,13 @@ helm:
 
 # Do not check for admission status
 diff:
-    - apiVersion: admissionregistration.k8s.io/v1
-      kind: MutatingWebhookConfiguration
-      name: monitoring-kube-prometheus-admission
-      operations:
-        - {"op":"remove", "path":"/webhooks"}
-    - apiVersion: admissionregistration.k8s.io/v1
-      kind: ValidatingWebhookConfiguration
-      name: monitoring-kube-prometheus-admission
-      operations:
-        - {"op":"remove", "path":"/webhooks"}
+  - apiVersion: admissionregistration.k8s.io/v1
+    kind: MutatingWebhookConfiguration
+    name: monitoring-kube-prometheus-admission
+    operations:
+      - {"op":"remove", "path":"/webhooks"}
+  - apiVersion: admissionregistration.k8s.io/v1
+    kind: ValidatingWebhookConfiguration
+    name: monitoring-kube-prometheus-admission
+    operations:
+      - {"op":"remove", "path":"/webhooks"}
