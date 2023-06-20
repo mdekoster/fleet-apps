@@ -1,7 +1,7 @@
 defaultNamespace: test-ns-label
 
-kustomize:
-  dir: overlays
+# kustomize:
+#   dir: overlays
 
 # Custom helm options
 helm:
