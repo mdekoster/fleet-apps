@@ -1,0 +1,10 @@
+defaultNamespace: test-ns-label
+
+kustomize:
+  dir: overlays
+
+# Custom helm options
+helm:
+  # Number of PI decimals to be calculated
+  values:
+    piplaces: 20
