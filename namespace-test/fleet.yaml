@@ -1,8 +1,8 @@
 defaultNamespace: test-ns-label
 keepResources: true
 
-kustomize:
-  dir: overlays
+# kustomize:
+#   dir: overlays
 
 # Custom helm options
 helm:
